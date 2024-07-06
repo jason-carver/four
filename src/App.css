@@ -7,7 +7,7 @@
 
 .box {
   width: 200px;
-  height: 150px;
+  height: 200px; /* Adjusted height to accommodate the new row */
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px;
@@ -44,3 +44,4 @@
 .button:hover {
   background-color: #45a049;
 }
+
