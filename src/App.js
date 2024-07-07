@@ -8,9 +8,14 @@ function App() {
   const [answer, setAnswer] = useState('');
 
   const generateNumbers = () => {
-    const newPercent = Math.floor(Math.random() * 101).toString();
+    let newPercent = Math.floor(Math.random() * 101).toString();
     const newDice1 = (Math.floor(Math.random() * 6) + 1).toString();
     const newDice2 = (Math.floor(Math.random() * 6) + 1).toString();
+    
+    if (newPercent.length < 2) {
+      newPercent = '0' + newPercent;
+    }
+
     const newAnswer = newPercent + newDice1 + newDice2;
 
     setPercent(newPercent);
